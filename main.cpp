@@ -161,8 +161,8 @@ void InitPipeline()
     // load and compile the two shaders
     ID3D10Blob* VS, * PS;
     ID3DBlob* VS_error, * PS_error;
-    D3DCompileFromFile(L"shaders.shader", 0, 0, "VShader", "vs_5_0", 0, 0, &VS, &VS_error);
-    D3DCompileFromFile(L"shaders.shader", 0, 0, "PShader", "ps_5_0", 0, 0, &PS, 0);
+    D3DCompileFromFile(L"shaders.hlsl", 0, 0, "VShader", "vs_5_0", 0, 0, &VS, &VS_error);
+    D3DCompileFromFile(L"shaders.hlsl", 0, 0, "PShader", "ps_5_0", 0, 0, &PS, 0);
 
     //ErrorBox(static_cast<const char*>(VS_error->GetBufferPointer()));
 

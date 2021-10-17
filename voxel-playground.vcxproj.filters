@@ -20,7 +20,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="shaders.shader">
+    <None Include="shaders.hlsl">
       <Filter>Source Files</Filter>
     </None>
   </ItemGroup>
